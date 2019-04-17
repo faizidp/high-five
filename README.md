@@ -22,11 +22,13 @@ The **"Sling" Mechanic** is missing in this code. As I was just stuck (not with 
 * ~~Camera Smooth Follow Player.~~ 
 * ~~Drag Fingers on screen to move the Player.~~
 * ~~Hands Direction of the player based on movement. (left/right)~~
-* ~~High Five Mechanic (High Five and Score Pop)~~~
+* ~~High Five Mechanic (High Five and Score Pop)~~
+
 * NPCManger: 
-  a) ~~Spawn Normal NPCs (Random on either sides)~~
+  a) ~~Spawn Normal NPCs (Random on either sides)~~ 
   b) ~~Spawn Probablity Weight based Police NPCs (Random on either sides)~~
   c) ~~Spawn Police Cars (Random in the midway)~~
+  
 * ~~Police Catch Mechanic~~
 * ~~Police Car Collide Mechanic~~
 
