@@ -3,6 +3,10 @@ The demo task I worked on.
 Unity Version : 2019.1.0f2
 *Note* Scripting Backend .Net 4x is used. (Although the project should run properly in older versions of Unity and in .Net 3x too).
 
+![High Five Demo](Demo/demo.gif)
+
+
+
 Time Taken: This whole task presented in the project took me about 16 hours in total. But that was in chunks as I could barely spare time.
 
 
