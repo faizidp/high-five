@@ -34,6 +34,17 @@ public class NPCManager : MonoBehaviour {
 		PoliceCar
 	}
 	void Start () {
+
+		NormalNPC = Resources.Load("Prefabs/NPC") as GameObject;
+		RandomColorsToPickFrom = new Color[]{Color.red,Color.black,Color.yellow,Color.magenta};
+		PoliceNPC = Resources.Load("Prefabs/PoliceNPC") as GameObject;
+		PoliceCar = Resources.Load("Prefabs/PoliceCar") as GameObject;
+
+		spawnParentNormalNPC = GameObject.Find("Dynamic").transform.Find("NPCs").Find("Normal");
+		spawnParentPoliceNPC = GameObject.Find("Dynamic").transform.Find("NPCs").Find("Police");
+		spawnParentPoliceCar = GameObject.Find("Dynamic").transform.Find("NPCs").Find("PoliceCar");
+
+
 		SpawnPedestrians();
 	}
 	

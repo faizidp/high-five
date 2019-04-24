@@ -14,6 +14,13 @@ public class WorldManager : MonoBehaviour
 
     public float floorSize = 30;
    void Start(){
+
+       floor = Resources.Load("Prefabs/Ground") as GameObject;
+       Wall = Resources.Load("Prefabs/Wall") as GameObject;
+
+        parentForFloors = GameObject.Find("Dynamic").transform.Find("Ground");
+        parentForDeadEnd = GameObject.Find("Dynamic").transform.Find("DeadEnds");
+
        SpawnFirstIteration();
        
    }

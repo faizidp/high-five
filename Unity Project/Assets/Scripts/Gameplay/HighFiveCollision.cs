@@ -8,7 +8,7 @@ public class HighFiveCollision : MonoBehaviour {
 	HighFiveController highFiveController;
 	// Use this for initialization
 	void Start () {
-		
+		highFiveController = GameObject.Find("Player").GetComponent<HighFiveController>();
 	}
 	
 	// Update is called once per frame

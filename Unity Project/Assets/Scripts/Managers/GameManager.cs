@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour {
 	{
 		instance = this;
 	}
+	void Start()
+	{
+		playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+	}
 
 	public void OnHandCuffed(){
 		Debug.Log("You are hand cuffed! (Busted i.e. :(");

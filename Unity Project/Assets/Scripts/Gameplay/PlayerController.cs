@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour {
 	float inputXForce;
 	
 	void Start () {
+
+		screenTouch = GameObject.Find("Canvas").transform.Find("SimpleTouch").GetComponent<SimpleTouchController>();
+
 		characterController = GetComponent<CharacterController>();
 		moveTarget = new Vector3(0,0,RunSpeed);
 		highFiveController = GetComponent<HighFiveController>();

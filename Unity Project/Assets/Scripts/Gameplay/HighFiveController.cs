@@ -25,6 +25,14 @@ public class HighFiveController : MonoBehaviour {
 	void Start(){
 //		Debug.Log(rightHand.rotation.z);
 	//	Debug.Log(leftHand.rotation.z);
+
+		leftHand = GameObject.Find("Player").transform.Find("LeftHand");
+		rightHand = GameObject.Find("Player").transform.Find("RightHand");
+		floatingScoreText = Resources.Load("Prefabs/FloatingScore") as GameObject;
+
+		worldSpaceCanvas = GameObject.Find("WorldCanvas");
+
+
 		GetComponent<CharacterController>().detectCollisions = false;
 		
 	}

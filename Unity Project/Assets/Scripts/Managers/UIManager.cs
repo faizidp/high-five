@@ -12,6 +12,10 @@ public class UIManager : MonoBehaviour {
 	void Awake(){
 		instance = this;
 	}
+	void Start()
+	{
+		gameOverPanel = GameObject.Find("Canvas").transform.Find("GameOverPanel").gameObject;
+	}
 	public void OnGameOver(){
 		gameOverPanel.SetActive(true);
 	}

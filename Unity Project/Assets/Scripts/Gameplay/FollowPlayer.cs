@@ -14,7 +14,7 @@ public float smoothSpeed = 0.125f;
 	
 	// Use this for initialization
 	void Start () {
-		
+		playerTransform = GameObject.Find("Player").transform;
 	}
 	void FixedUpdate(){
 		follow();
